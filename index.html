@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>SURVEY FORM</title>
+    <style>
+      body {
+        background-color: silver;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">SURVEY FORM</h1>
+    <p id="description">Welcome</p>
+    <form id="survey-form">
+      <div>
+      <label id="name-label">Enter Your Name:</label> 
+      <input type="text" id="name" placeholder="type name" required>
+      </div>
+      <div>
+      <label id="email-label">Enter Mail:</label>
+      <input type="email" id="email" placeholder="type mail" required/>
+      </div>
+      <div>
+      <label id="number-label">Enter your age:<input id="number" type="number" min="18" max="100" placeholder="Enter your age"></label>
+      </div>
+
+      <label>How do you know about me?
+        <select id="dropdown">
+          <option>select</option>
+          <option>Family</option>
+          <option>Friends</option>
+        </select>
+      </label>
+      <p>According to your observation my behaviour is </p>
+      <label for="beh1"><input type="radio" id="beh1" name="behs" value="Cool">Cool</label>
+      <br><br>
+      <label for="beh2"><input type="radio" id="beh2" name="behs" value="Rudy">Rudy</label>
+      <br><br>
+      <label for="beh3"><input type="radio" beh="beh3" name="behs" value="Good-hearted" checked>Good hearted</label>
+      <br><br>
+      <p>Things u like in me</p>
+      <label for="thing1">Good-hearted</label>
+      <input type="checkbox" id="thing1" value="Good-hearted">
+      <br><br>
+      <label for="thing2">Helping-nature</label>
+      <input type="checkbox" id="thing2" value="Helping-nature">
+      <br><br>
+      <label for="thing3">silent</label>
+      <input type="checkbox" id="thing3" value="silent">
+      <br><br><br>
+      <textarea cols="20" rows="4" placeholder="write something about me..."></textarea>
+      <br><br>
+      <input id="submit" type="submit" value="Submit">
+    </form> 
+  </body>
+</html>
